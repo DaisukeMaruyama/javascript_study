@@ -1,2 +1,2 @@
 # javascript_study
-## これまでCodecademyでjavascriptの基礎をやってきたので自身でアウトプットをする為のレポジトリ。
+### これまでCodecademyでjavascriptの基礎をやってきたので自身でアウトプットをする為のレポジトリ
