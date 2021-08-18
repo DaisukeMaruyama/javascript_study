@@ -16,5 +16,18 @@ console.log(array[1]);
 console.log("配列の中身全て↓");
 console.log(array);
 
+//連想配列
+const users = [];
 
+const input3 = readLine.question("ハッシュ配列に代入する文字を入れてください。");
+const input4 = readLine.questionInt("ハッシュ配列に代入する数字を入れてください。");
 
+users.push({name: input3, id: input4});
+
+const name = users[0]['name'];
+const id = users[0]['id'];
+//又はusers[0].nameとusers[0].id
+
+users.forEach(element => {
+  console.log(`名前は${name}: IDは${id}`)
+});
