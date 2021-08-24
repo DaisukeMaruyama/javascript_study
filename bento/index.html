@@ -11,11 +11,25 @@
 
     <!--タイトル-->
     <div class="mt-5">
-        <h1>お弁当屋さん</h1>
+      <h1>お弁当屋さん</h1>
     </div>
     <!--END : タイトル-->
+    <hr class="w-50 my-3 mx-auto">
+    
 
-    <hr class="w-50 my-3">
+    <!--ラジオボタン-->
+    <div class="mt-4">
+      <h5>ご飯の量</h5>
+      <form name="riceForm">
+        <input type="radio" value="大" class="mx-1"/>大
+        <input type="radio" value="中" class="mx-1"/>中
+        <input type="radio" value="小" class="mx-1"/>小
+        <input type="button" class="btn btn-sm btn-outline-info ml-2" value="送信" onclick="riceButtonClick()" />
+      </form>
+
+
+    </div>
+
   
 <script src="bento.js"></script>
 </body>
