@@ -30,5 +30,5 @@ const MEDIA_OPTION_ANSWER = document.getElementById("mediaOptionAnswer");
 function mediaButton () {
   const MEDIA_INPUT = document.mediaForm.media;
   const NUM = MEDIA_INPUT.selectedIndex;
-  MEDIA_OPTION_ANSWER.textContent = MEDIA_INPUT[NUM].value;
+  MEDIA_OPTION_ANSWER.textContent = MEDIA_INPUT.options[NUM].value;
 }
