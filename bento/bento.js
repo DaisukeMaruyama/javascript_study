@@ -36,3 +36,11 @@ function mediaButton () {
   MEDIA_OPTION_ANSWER.textContent = MEDIA_INPUT.options[NUM].value; //document.フォーム名.selectオブジェクト名.options[index番号].valueで取得可能
 }
 
+//テキストボックス
+const TEXT_OPTION_ANSWER = document.getElementById("addressOptionAnswer");
+
+function addressButton () {
+  const ADDRESS_INPUT = document.addressForm.address;
+  TEXT_OPTION_ANSWER.innerHTML = `お届け先住所： ${ADDRESS_INPUT.value}`;
+  ADDRESS_INPUT.value = " "
+}
