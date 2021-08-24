@@ -1,3 +1,4 @@
+//オプション
 const OPTION_ANSWER = document.getElementById("optionAnswer");
 
 function riceButtonClick () {
@@ -11,6 +12,7 @@ function riceButtonClick () {
   OPTION_ANSWER.textContent = `ご飯の量は${rice_output}です。`
 }
 
+//チェックボックス
 const ACCESSORY_OPTION_ANSWER = document.getElementById("accessoryOptionAnswer");
 
 function accessoryButtonClick() {
@@ -25,10 +27,12 @@ function accessoryButtonClick() {
 
 }
 
+//セレクトボックス
 const MEDIA_OPTION_ANSWER = document.getElementById("mediaOptionAnswer");
 
 function mediaButton () {
   const MEDIA_INPUT = document.mediaForm.media;
   const NUM = MEDIA_INPUT.selectedIndex;
-  MEDIA_OPTION_ANSWER.textContent = MEDIA_INPUT.options[NUM].value;
+  MEDIA_OPTION_ANSWER.textContent = MEDIA_INPUT.options[NUM].value; //document.フォーム名.selectオブジェクト名.options[index番号].valueで取得可能
 }
+
