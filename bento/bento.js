@@ -5,8 +5,22 @@ function riceButtonClick () {
   let rice_output;
   for (let i = 0; i<RICE_INPUT.length; i++) {
     if (RICE_INPUT[i].checked) {
-      rice_output = RICE_INPUT[i].value
+      rice_output = RICE_INPUT[i].value;
     }
   }
   OPTION_ANSWER.textContent = `ご飯の量は${rice_output}です。`
+}
+
+const ACCESSORY_OPTION_ANSWER = document.getElementById("accessoryOptionAnswer");
+
+function accessoryButtonClick() {
+  const ACCESSORY_INPUT = document.getElementsByName("accessory");
+  let accessory_output = " ";
+  for (let a = 0; a<ACCESSORY_INPUT.length; a++) {
+    if (ACCESSORY_INPUT[a].checked) {
+      accessory_output = accessory_output + " " + ACCESSORY_INPUT[a].value;
+    }
+  }
+  ACCESSORY_OPTION_ANSWER.innerHTML = `付属品は${accessory_output}です。`
+
 }
