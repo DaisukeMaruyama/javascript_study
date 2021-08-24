@@ -15,19 +15,22 @@
     </div>
     <!--END : タイトル-->
     <hr class="w-50 my-3 mx-auto">
-    
+
 
     <!--ラジオボタン-->
     <div class="mt-4">
       <h5>ご飯の量</h5>
       <form name="riceForm">
-        <input type="radio" value="大" class="mx-1"/>大
-        <input type="radio" value="中" class="mx-1"/>中
-        <input type="radio" value="小" class="mx-1"/>小
+        <input name="rice" type="radio" value="大" class="mx-1"/>大
+        <input name="rice" type="radio" value="中" class="mx-1"/>中
+        <input name="rice" type="radio" value="小" class="mx-1"/>小
         <input type="button" class="btn btn-sm btn-outline-info ml-2" value="送信" onclick="riceButtonClick()" />
       </form>
+    </div>
 
-
+    <div class="mt-4">
+      <div id="optionAnswer" class="border mx-auto mb-5 riceoutput" >
+      </div>
     </div>
 
   
