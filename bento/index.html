@@ -58,7 +58,15 @@
         <input type="button" class="btn btn-sm btn-outline-info ml-2" value="送信" onclick="addressButton()" />
       </form>
     </div>
-    
+
+    <div class="mt-4">
+      <h5>その他ご要望</h5>
+      <form name="requestForm">
+        <textarea name="request" type="textarea"></textarea>
+        <input type="button" class="btn btn-sm btn-outline-info ml-2" value="送信" onclick="requestButton()" />
+      </form>
+    </div>
+
     <!-- 出力 -->
     <div class="mt-4">
       <div id="optionAnswer" class="border mx-auto mb-5 riceoutput" >
@@ -68,6 +76,8 @@
       <div id="mediaOptionAnswer" class="border mx-auto mb-5 riceoutput" >
       </div>
       <div id="addressOptionAnswer" class="border mx-auto mb-5 riceoutput" >
+      </div>
+      <div id="requestAnswer" class="border mx-auto mb-5 request-output" >
       </div>
     </div>
 
