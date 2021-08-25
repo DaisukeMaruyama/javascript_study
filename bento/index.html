@@ -66,6 +66,17 @@
         <input type="button" class="btn btn-sm btn-outline-info ml-2" value="送信" onclick="requestButton()" />
       </form>
     </div>
+    <!--onchangeの練習-->
+    <div class="mt-4">
+      <h5>支払い方法</h5>
+      <form name="onchangeForm">
+        <select name="onchangeSelect" id="onchangeSelect" onchange="payment()">
+          <option value=" ">選択してください</option>
+          <option value="クレジットカード">クレジットカード</option>
+          <option value="銀行振り込み">銀行振り込み</option>
+        </select>
+      </form>
+    </div>
 
     <!-- 出力 -->
     <div class="mt-4">
@@ -78,6 +89,8 @@
       <div id="addressOptionAnswer" class="border mx-auto mb-5 riceoutput" >
       </div>
       <div id="requestAnswer" class="border mx-auto mb-5 request-output" >
+      </div>
+      <div id="onChangeAnswer" class="border mx-auto mb-5 riceoutput" >
       </div>
     </div>
 
