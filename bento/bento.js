@@ -44,3 +44,13 @@ function addressButton () {
   TEXT_OPTION_ANSWER.innerHTML = `お届け先住所： ${ADDRESS_INPUT.value}`;
   ADDRESS_INPUT.value = " "
 }
+
+//テキストエリア
+
+const TEXTAREA_OPTION_ANSWER = document.getElementById("requestAnswer");
+
+function requestButton () {
+  const REQUEST_INPUT = document.requestForm.request;
+  TEXTAREA_OPTION_ANSWER.innerHTML = REQUEST_INPUT.value;
+  REQUEST_INPUT.value = " "; 
+}
