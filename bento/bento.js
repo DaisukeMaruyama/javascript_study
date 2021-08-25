@@ -54,3 +54,13 @@ function requestButton () {
   TEXTAREA_OPTION_ANSWER.innerHTML = REQUEST_INPUT.value;
   REQUEST_INPUT.value = " "; 
 }
+
+//onchange
+
+const ONCHANGE_OPTION_ANSWER = document.getElementById("onChangeAnswer");
+
+function payment () {
+  const s = document.getElementById("onchangeSelect").selectedIndex;
+  const ONCHANGE_INPUT = document.onchangeForm.onchangeSelect.options[s].value;
+  ONCHANGE_OPTION_ANSWER.innerHTML = ONCHANGE_INPUT;
+}
