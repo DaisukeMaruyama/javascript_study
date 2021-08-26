@@ -1,3 +1,16 @@
+//弁当の種類 
+
+//並
+document.getElementById("nami").onclick = function () {
+  document.getElementById("name").textContent = "お弁当 -並-";
+  document.getElementById("price").textContent = "1000";
+}
+//上
+document.getElementById("jyou").onclick = function () {
+  document.getElementById("name").textContent = "お弁当 -上-";
+  document.getElementById("price").textContent = "2000";
+}
+
 //オプション
 const OPTION_ANSWER = document.getElementById("optionAnswer");
 
