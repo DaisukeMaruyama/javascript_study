@@ -4,13 +4,14 @@ const NAME = document.getElementById("name");
 const PRICE = document.getElementById("price");
 
 //並
-
-document.getElementById("nami").onclick = function () {
+const NAMI = document.getElementById("nami");
+NAMI.onclick = function () {
   NAME.textContent = "お弁当 -並-";
-  PRICE..textContent = "1000";
+  PRICE.textContent = "1000";
 }
 //上
-document.getElementById("jyou").onclick = function () {
+const JYOU = document.getElementById("jyou");
+JYOU.onclick = function () {
   NAME.textContent = "お弁当 -上-";
   PRICE.textContent = "2000";
 }
