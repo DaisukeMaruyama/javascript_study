@@ -26,7 +26,7 @@ function opponentTurn () {
   console.log(`現在の合計スコア：${opponentScore}`);
 }
 
-
+//実施
 console.log(visual_line);
 console.log("いざダイスゲームで勝負")
 console.log(`対戦相手は${opponent[rand]}です`)
