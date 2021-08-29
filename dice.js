@@ -1,4 +1,5 @@
 //ダイスゲーム
+//3回実施しスコアの多い方が勝ち
 
 const readLine = require("readline-sync");
 const visual_line = "*************************";
