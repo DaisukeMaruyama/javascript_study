@@ -9,6 +9,7 @@ let opponentScore = 0;
 //乱数を出す
 const rand = Math.floor(Math.random() * 3) + 1;
 
+//プレイヤー
 function yourTurn () {
   console.log(visual_line);
   const dice = readLine.question("ダイスを降ってください※enterでダイスを振る");
@@ -17,6 +18,7 @@ function yourTurn () {
   yourScore += parseInt(playersRoll);
   console.log(`現在の合計スコア：${yourScore}`);
 }
+//相手
 function opponentTurn () {
   console.log(visual_line);
   const next = readLine.question("相手のターン※enterで次へ");
