@@ -1,0 +1,27 @@
+//ダイスゲーム
+
+const readLine = require("readline-sync");
+const visual_line = "*************************";
+const opponent = ["dai","sho","kori","ken"]
+//再代入するときはlet。constはできない
+let yourScore = 0;
+let opponentScore = 0;
+//乱数を出す
+const rand = Math.floor(Math.random() * 3) + 1;
+
+function game () {
+  console.log(visual_line);
+  console.log("いざダイスゲームで勝負")
+  console.log(`対戦相手は${opponent[rand]}です`)
+  console.log(visual_line);
+  const dice = readLine.question("ダイスを降ってください※enterでダイスを振る");
+  const playersRoll = Math.floor(Math.random() * 6) + 1;
+  console.log(`あなたの目は${playersRoll}です`)
+  yourScore += parseInt(playersRoll);
+}
+
+
+for(let turn = 0; turn<3; turn++) {
+  game();
+  console.log(`現在の合計スコア：${yourScore}`);
+}
