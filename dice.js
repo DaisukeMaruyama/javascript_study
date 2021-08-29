@@ -37,3 +37,10 @@ for(let turn = 0; turn<3; turn++) {
   yourTurn();
   opponentTurn();
 }
+if (yourScore > opponentScore) {
+  console.log("あなたの勝ちです!");
+} else if (yourScore < opponentScore) {
+  console.log(`${opponent[rand]}の勝ちです!`);
+} else {
+  console.log("引き分けです!");
+}
