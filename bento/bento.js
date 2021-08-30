@@ -33,6 +33,15 @@ JYOU.addEventListener("mouseleave", () => {
   JYOU.classList.remove("btn-lg");
 }, false)
 
+//ショッピングカート
+const CART_CONFIRM = document.getElementById("cartConfirm");
+const CART_LIST = document.getElementById("cartList");
+
+CART_CONFIRM.onclick = () => {
+  const LI = `<li>${NAME.textContent}</li>`;
+  CART_LIST.insertAdjacentHTML( `beforeend`, LI);
+}
+
 //オプション
 const OPTION_ANSWER = document.getElementById("optionAnswer");
 
