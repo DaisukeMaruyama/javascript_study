@@ -15,6 +15,7 @@ const JYOU = document.getElementById("jyou");
 JYOU.onclick = function () {
   NAME.textContent = "お弁当 -上-";
   PRICE.textContent = "2000";
+  IMAGE.setAttribute("src", "img/jou.bento.png");
 }
 
 //オプション
