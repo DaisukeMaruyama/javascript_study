@@ -8,6 +8,7 @@ const NAMI = document.getElementById("nami");
 NAMI.onclick = function () {
   NAME.textContent = "お弁当 -並-";
   PRICE.textContent = "1000";
+  IMAGE.setAttribute("src", "img/nami.bento.png")
 }
 //上
 const JYOU = document.getElementById("jyou");
