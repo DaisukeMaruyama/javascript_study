@@ -38,7 +38,7 @@ const CART_CONFIRM = document.getElementById("cartConfirm");
 const CART_LIST = document.getElementById("cartList");
 
 CART_CONFIRM.onclick = () => {
-  const LI = `<li>${NAME.textContent}</li>`;
+  const LI = `<li>・${NAME.textContent}</li>`;
   CART_LIST.insertAdjacentHTML( `beforeend`, LI);
 }
 
