@@ -10,6 +10,14 @@ NAMI.onclick = function () {
   PRICE.textContent = "1000";
   IMAGE.setAttribute("src", "img/nami.bento.png")
 }
+
+NAMI.addEventListener("mouseover", () => {
+  NAMI.classList.add("btn-lg");
+}, false)
+NAMI.addEventListener("mouseleave", () => {
+  NAMI.classList.remove("btn-lg");
+}, false)
+
 //上
 const JYOU = document.getElementById("jyou");
 JYOU.onclick = function () {
