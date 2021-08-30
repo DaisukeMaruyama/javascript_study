@@ -26,6 +26,13 @@ JYOU.onclick = function () {
   IMAGE.setAttribute("src", "img/jou.bento.png");
 }
 
+JYOU.addEventListener("mouseover", () => {
+  JYOU.classList.add("btn-lg");
+}, false)
+JYOU.addEventListener("mouseleave", () => {
+  JYOU.classList.remove("btn-lg");
+}, false)
+
 //オプション
 const OPTION_ANSWER = document.getElementById("optionAnswer");
 
