@@ -2,7 +2,7 @@
 
 const NAME = document.getElementById("name");
 const PRICE = document.getElementById("price");
-
+const IMAGE = document.getElementById("image");
 //並
 const NAMI = document.getElementById("nami");
 NAMI.onclick = function () {
